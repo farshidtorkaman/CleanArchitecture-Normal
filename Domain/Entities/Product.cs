@@ -12,5 +12,7 @@ namespace Domain.Entities
         public string Description { get; set; }
 
         public virtual List<ProductCategory> ProductCategories { get; set; }
+
+        public virtual List<ProductAttribute> ProductAttributes { get; set; }
     }
 }

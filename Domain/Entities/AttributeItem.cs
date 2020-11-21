@@ -1,4 +1,5 @@
 ﻿using Domain.Common;
+using System.Collections.Generic;
 
 namespace Domain.Entities
 {
@@ -9,5 +10,7 @@ namespace Domain.Entities
         public Attribute Attribute { get; set; }
 
         public int AttributeId { get; set; }
+
+        public virtual List<ProductAttribute> ProductAttributes { get; set; }
     }
 }
