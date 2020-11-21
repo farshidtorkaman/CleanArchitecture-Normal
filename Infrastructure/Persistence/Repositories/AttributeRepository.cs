@@ -15,7 +15,7 @@ namespace Infrastructure.Persistence.Repositories
 
         public override Task<List<Attribute>> GetAllAsync()
         {
-            return _context.Attributes.Include(f => f.AttributeGroup).ToListAsync();
+            return _entities.Include(f => f.AttributeGroup).ToListAsync();
         }
     }
 }
